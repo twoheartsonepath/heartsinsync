@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <script type="text/javascript">
+    	function myFunction()
+         {
+		    var username =document.forms["myForm"]["username"].value;
+		    var pass =document.forms["myForm"]["password"].value;
+		    if (username=="Nandhini" && pass=="Chandran")
+             {
+		       window.location.href="heartsinsync.html";
+		    }
+             else {
+		        alert("please use correct username & password");
+                window.location.href="index.html";
+		    }
+		}
+    </script>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <section>
+        <div class="box">
+
+            <div class="form">
+                <img src="profile.png" class="user" alt="">
+                <h2>Unlock the next chapter of our endless love story</h2>
+                <form name="myForm" class="" action="index.html" method="post" enctype="multipart/form-data">
+            
+                    <div class="inputBx">
+                        <input type="text" name="username" placeholder="Your Life Partner, My love" id="username"  required autofocus>
+                        <!--
+                        <img src="images/user.png" alt="">-->
+                    </div>
+                    <div class="inputBx">
+                        <input type="password" name="passward" id="password" placeholder="A key to my heart"  required>
+                    </div>
+                    <div class="inputBx" > 
+                        <input  type="button" name="submit" value="Login       " id="submit" onclick="myFunction()">
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+   </body>
+</html>
